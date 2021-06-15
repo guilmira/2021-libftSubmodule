@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/13 16:19:51 by guilmira          #+#    #+#             */
-/*   Updated: 2021/06/14 09:28:39 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/06/15 16:54:17 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,16 @@
 
 void	ft_putnbr_base_fd(unsigned long long n, char *base, int fd)
 {
-	int				i;
+	int					i;
 	unsigned long long	x;
 
 	i = -1;
 	if (!base || !base[0])
 		return ;
 	while (base[++i])
-	{
-		if (ft_strchr(base + 1 + i, base[i]) || ft_strchr(base, '+') || ft_strchr(base, '-'))
+		if (ft_strchr(base + 1 + i, base[i]) || \
+		ft_strchr(base, '+') || ft_strchr(base, '-'))
 			return ;
-	}
 	if (n < 0)
 	{
 		x = n * -1;
