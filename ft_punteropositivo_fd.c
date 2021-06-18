@@ -6,13 +6,13 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/13 16:19:51 by guilmira          #+#    #+#             */
-/*   Updated: 2021/06/15 16:54:17 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/06/18 09:07:41 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_base_fd(unsigned long long n, char *base, int fd)
+void	ft_punteropositivo_fd(unsigned long long n, char *base, int fd)
 {
 	int					i;
 	unsigned long long	x;
