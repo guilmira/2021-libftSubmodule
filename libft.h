@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 14:43:09 by guilmira          #+#    #+#             */
-/*   Updated: 2021/06/18 09:16:46 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/06/22 11:56:12 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
+int		ft_count_digits(int n);
 /*CALLOC*/
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
