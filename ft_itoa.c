@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 17:19:26 by guilmira          #+#    #+#             */
-/*   Updated: 2021/05/30 16:12:23 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/06/22 10:52:41 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ static void	itoa_writer(int n, char *ptr)
 	ptr[++i] = '\0';
 }
 
+//Esta para repasar. remplazar con la nueva funciond e contar digitos
 char	*ft_itoa(int n)
 {
 	char	*ptr;
