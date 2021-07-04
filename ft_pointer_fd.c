@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_positivepointer_fd.c                            :+:      :+:    :+:   */
+/*   ft_pointer_fd.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,8 @@
 
 #include "libft.h"
 
-void	ft_positivepointer_fd(unsigned long long n, char *base, int fd)
+/** Pendiente de revisar **/
+void	ft_pointer_fd(unsigned long long n, char *base, int fd)
 {
 	int					i;
 	unsigned long long	x;
