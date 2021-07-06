@@ -37,7 +37,7 @@ void	ft_pointer_fd(unsigned long long n, char *base, int fd)
 		ft_putchar_fd(base[x % ft_strlen(base)], fd);
 	else
 	{
-		ft_punteropositivo_fd(x / ft_strlen(base), base, fd);
+		ft_pointer_fd(x / ft_strlen(base), base, fd);
 		ft_putchar_fd(base[x % ft_strlen(base)], fd);
 	}
 }
