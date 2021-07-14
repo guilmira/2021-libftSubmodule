@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 17:19:26 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/06 08:28:32 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/07/14 17:32:14 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static void	itoa_writer(int n, char *ptr)
 {
 	static int	i;
 
-	if (n / 10 != 0)
+	if (n / 10)
 		itoa_writer(n / 10, ptr);
 	else
 	{
