@@ -6,12 +6,14 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 07:13:58 by guilmira          #+#    #+#             */
-/*   Updated: 2021/05/31 16:34:37 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/07/16 16:08:00 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/** PURPOSE : allocates space for a new node with content.
+ * 1. Outputs address of the newly created node. */
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*node;

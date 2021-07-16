@@ -6,12 +6,17 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 14:51:30 by guilmira          #+#    #+#             */
-/*   Updated: 2021/05/31 11:20:54 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/07/16 16:20:11 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/** PURPOSE : returns address of the last element.
+ * 1. While the NEXT element is pointing somewhere (i.e. not NULL) \
+ * LIST is updated and then return
+ * Note than in the main program, list will not be updated,
+ * the function will only return a new adress, but not replace it. */
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)

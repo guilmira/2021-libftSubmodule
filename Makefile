@@ -58,7 +58,7 @@ ${NAME}: ${OBJS}
 	ar rcs ${NAME} ${OBJS}
 
 m:
-	gcc main.c $(SRCS) $(INCLUDES) && ./a.out
+	gcc main.c $(OBJS) $(INCLUDES) && ./a.out
 
 clean:
 	rm -rf ${OBJS}
