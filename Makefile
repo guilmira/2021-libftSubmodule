@@ -6,7 +6,7 @@
 #    By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/17 12:59:05 by guilmira          #+#    #+#              #
-#    Updated: 2021/07/06 12:41:32 by guilmira         ###   ########.fr        #
+#    Updated: 2021/07/16 14:49:15 by guilmira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,10 +61,10 @@ m:
 	gcc main.c $(SRCS) $(INCLUDES) && ./a.out
 
 clean:
-	rm -f ${OBJS}
+	rm -rf ${OBJS}
 
 fclean: clean
-	rm -f $(NAME)
+	rm -rf $(NAME)
 
 re: fclean all bonus
 
