@@ -6,12 +6,14 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 15:15:26 by guilmira          #+#    #+#             */
-/*   Updated: 2021/06/04 09:32:02 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/07/16 14:44:26 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/** PURPOSE : find letter located in origin string.
+ * 1. If letter is located, returns address to the letter (included). */
 char	*ft_strchr(const char *s, int c)
 {
 	int	i;
