@@ -6,13 +6,13 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 12:31:26 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/17 17:43:54 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/07/17 18:11:18 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*advance_str(char *str)
+static char	*advance_str(char *str, int *sign)
 {
 	while (*str == ' ' || *str == '\t' || *str == '\n' || \
 	*str == '\r' || *str == '\f' || *str == '\v')
@@ -20,7 +20,7 @@ static char	*advance_str(char *str)
 	while (*str == '+' || *str == '-')
 	{
 		if (*str == '-')
-			sign *= -1;
+			*sign *= -1;
 		str++;
 	}
 	while (*str == '0')
@@ -39,7 +39,7 @@ int	ft_atoi_plus(char *str)
 
 	sign = 1;
 	n = 0;
-	str = advance_str(str);
+	str = advance_str(str, &sign);
 	while (ft_isdigit(*str))
 	{
 		n = (*str - '0') + n * 10;
