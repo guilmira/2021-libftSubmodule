@@ -6,11 +6,27 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 12:31:26 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/17 17:20:58 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/07/17 17:43:54 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static char	*advance_str(char *str)
+{
+	while (*str == ' ' || *str == '\t' || *str == '\n' || \
+	*str == '\r' || *str == '\f' || *str == '\v')
+		str++;
+	while (*str == '+' || *str == '-')
+	{
+		if (*str == '-')
+			sign *= -1;
+		str++;
+	}
+	while (*str == '0')
+		str++;
+	return (str);
+}
 
 /** PURPOSE : converts string into integer equivalent, skiping spaces and signs.
  * 1. Skip spaces, tabs and similar.
@@ -23,15 +39,7 @@ int	ft_atoi_plus(char *str)
 
 	sign = 1;
 	n = 0;
-	while (*str == ' ' || *str == '\t' || *str == '\n' || \
-	*str == '\r' || *str == '\f' || *str == '\v')
-		str++;
-	while (*str == '+' || *str == '-')
-	{
-		if (*str == '-')
-			sign *= -1;
-		str++;
-	}
+	str = advance_str(str);
 	while (ft_isdigit(*str))
 	{
 		n = (*str - '0') + n * 10;
