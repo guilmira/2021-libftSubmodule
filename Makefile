@@ -6,7 +6,7 @@
 #    By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/17 12:59:05 by guilmira          #+#    #+#              #
-#    Updated: 2021/07/16 14:49:15 by guilmira         ###   ########.fr        #
+#    Updated: 2021/07/17 18:13:07 by guilmira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ SRCS	=		$(1BOOLEANS) $(2STRINGS) $(3STRINGS_ADV) $(4NUMBERS) \
 3STRINGS_ADV =	./3strings_adv/ft_split.c ./3strings_adv/ft_strdup.c ./3strings_adv/ft_strjoin.c \
 				./3strings_adv/ft_strtrim.c ./3strings_adv/ft_substr.c
 
-4NUMBERS =		./4numbers/ft_atoi.c ./4numbers/ft_itoa.c
+4NUMBERS =		./4numbers/ft_atoi_plus.c ./4numbers/ft_atoi.c ./4numbers/ft_itoa.c
 
 5MEMORY	=		./5memory/ft_bzero.c ./5memory/ft_calloc.c ./5memory/ft_memccpy.c \
 				./5memory/ft_memchr.c ./5memory/ft_memcmp.c ./5memory/ft_memcpy.c \
