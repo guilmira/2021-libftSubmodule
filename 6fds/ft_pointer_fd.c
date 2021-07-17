@@ -25,13 +25,6 @@ void	ft_pointer_fd(unsigned long long n, char *base, int fd)
 		if (ft_strchr(base + 1 + i, base[i]) || \
 		ft_strchr(base, '+') || ft_strchr(base, '-'))
 			return ;
-	/* if (n < 0)
-	{
-		x = n * -1;
-		ft_putchar_fd('-', fd);
-	}
-	else
-		x = n; */
 	x = n;
 	if (x / ft_strlen(base) == 0)
 		ft_putchar_fd(base[x % ft_strlen(base)], fd);
