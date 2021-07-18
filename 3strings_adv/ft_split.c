@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 07:13:28 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/18 08:14:19 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/07/18 09:42:42 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static int	word_count(char const *s, char c)
  * and places them in table.
  * 1. Moves through string.
  * 2. Detects character and allocates mem for the substring.
- * 3. Fills last place of the table with pointer to NULL */
+ * 3. Fills last place of the table with pointer to NULL. */
 static char	**allocate(char *str, char **table, char c)
 {
 	int		i;
@@ -51,6 +51,7 @@ static char	**allocate(char *str, char **table, char c)
 		{
 			if (str[i] != c)
 			{
+
 				table[w] = ft_substr(str, start, i + 1 - start);
 				if (!table[w++])
 					return (NULL);
