@@ -6,12 +6,14 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 12:31:26 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/17 18:11:18 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/07/18 08:12:41 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/** PURPOSE : Skips spaces, then signs, then 0.
+ *  Intentionally works only on that order. */
 static char	*advance_str(char *str, int *sign)
 {
 	while (*str == ' ' || *str == '\t' || *str == '\n' || \
@@ -28,7 +30,7 @@ static char	*advance_str(char *str, int *sign)
 	return (str);
 }
 
-/** PURPOSE : converts string into integer equivalent, skiping spaces and signs.
+/** PURPOSE : converts string into int equivalent. Skips spaces and signs.
  * 1. Skip spaces, tabs and similar.
  * 2. Skip '-' and '+'. Check sign.
  * 3. Take the tring digit and add it to global number (multiplied by 10); */

@@ -6,12 +6,15 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 15:04:36 by guilmira          #+#    #+#             */
-/*   Updated: 2021/05/22 17:39:38 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/07/18 08:13:47 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/** PURPOSE : Duplicates input string by allocating memory at the heap.
+ * 1. Allocates enough memory by using string lenght (+ 1 to account for \\0).
+ * 2. Copies string, then adds 0 Returns pointer. */
 char	*ft_strdup(const char *s1)
 {
 	char	*ptr;

@@ -6,12 +6,13 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 09:04:35 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/06 12:43:24 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/07/18 08:15:59 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/** PURPOSE : returns 1 if digit. */
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');

@@ -6,7 +6,7 @@
 #    By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/17 12:59:05 by guilmira          #+#    #+#              #
-#    Updated: 2021/07/17 18:13:07 by guilmira         ###   ########.fr        #
+#    Updated: 2021/07/18 08:07:13 by guilmira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,14 +24,14 @@ SRCS	=		$(1BOOLEANS) $(2STRINGS) $(3STRINGS_ADV) $(4NUMBERS) \
 				$(5MEMORY) $(6FDS) $(7TOOLS) $(8LINKED_LISTS)
 
 1BOOLEANS =		./1booleans/ft_isalnum.c ./1booleans/ft_isalpha.c ./1booleans/ft_isascii.c \
-				./1booleans/ft_isdigit.c ./1booleans/ft_isprint.c
+				./1booleans/ft_isdigit.c ./1booleans/ft_isprint.c ./1booleans/ft_isspaces.c
 
 2STRINGS =		./2strings/ft_strchr_plus.c ./2strings/ft_strchr.c ./2strings/ft_strlcat.c \
 				./2strings/ft_strlcpy.c ./2strings/ft_strlen.c ./2strings/ft_strmapi.c \
 				./2strings/ft_strncmp.c ./2strings/ft_strnstr.c ./2strings/ft_strrchr.c
 
-3STRINGS_ADV =	./3strings_adv/ft_split.c ./3strings_adv/ft_strdup.c ./3strings_adv/ft_strjoin.c \
-				./3strings_adv/ft_strtrim.c ./3strings_adv/ft_substr.c
+3STRINGS_ADV =	./3strings_adv/ft_free_split.c ./3strings_adv/ft_split.c ./3strings_adv/ft_strdup.c \
+				./3strings_adv/ft_strjoin.c ./3strings_adv/ft_strtrim.c ./3strings_adv/ft_substr.c
 
 4NUMBERS =		./4numbers/ft_atoi_plus.c ./4numbers/ft_atoi.c ./4numbers/ft_itoa.c
 

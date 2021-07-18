@@ -6,12 +6,14 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 07:13:28 by guilmira          #+#    #+#             */
-/*   Updated: 2021/06/02 13:47:49 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/07/18 08:14:19 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/** PURPOSE : counts words separated by char (i.e ' ', '|', ...).
+ * Note that input string is expected to be trimmed. */
 static int	word_count(char const *s, char c)
 {
 	int	i;
@@ -29,6 +31,11 @@ static int	word_count(char const *s, char c)
 	return (words);
 }
 
+/** PURPOSE : main body of the split. Allocates mem for strings
+ * and places them in table.
+ * 1. Moves through string.
+ * 2. Detects character and allocates mem for the substring.
+ * 3. Fills last place of the table with pointer to NULL */
 static char	**allocate(char *str, char **table, char c)
 {
 	int		i;
@@ -56,6 +63,10 @@ static char	**allocate(char *str, char **table, char c)
 	return (table);
 }
 
+/** PURPOSE : Takes a string and loads words into an array of type table[w].
+ * 1. Trims the string at beginning and end.
+ * 2. Allocates enough memory in table[w] by counting words in the string.
+ * 3. Fills table and frees trimmed string. */
 char	**ft_split(char const *s, char c)
 {
 	char	**table;

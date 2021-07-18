@@ -1,21 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isspaces.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/19 09:00:09 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/18 08:15:16 by guilmira         ###   ########.fr       */
+/*   Created: 2021/07/17 18:39:27 by guilmira          #+#    #+#             */
+/*   Updated: 2021/07/18 08:16:24 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/** PURPOSE : returns 1 if alphabet or numeric. */
-int	ft_isalnum(int c)
+/** PURPOSE : returns 1 if space of variation. */
+int	ft_isspaces(int c)
 {
-	return (((c >= 'A' && c <= 'Z') \
-	|| (c >= 'a' && c <= 'z') || \
-	(c >= '0' && c <= '9')));
+	return (c == ' ' || c == '\t' || c == '\n' || \
+	c == '\r' || c == '\f' || c == '\v');
 }

@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_free_split.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/19 09:00:09 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/18 08:15:16 by guilmira         ###   ########.fr       */
+/*   Created: 2021/07/18 07:44:40 by guilmira          #+#    #+#             */
+/*   Updated: 2021/07/18 08:11:30 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/** PURPOSE : returns 1 if alphabet or numeric. */
-int	ft_isalnum(int c)
+/** PURPOSE : frees spaces allocated for split. */
+void	ft_free_split(char **table)
 {
-	return (((c >= 'A' && c <= 'Z') \
-	|| (c >= 'a' && c <= 'z') || \
-	(c >= '0' && c <= '9')));
+	int	w;
+
+	w = -1;
+	while (table[++w])
+		free(table[w]);
+	free(table);
 }
