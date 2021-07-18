@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 07:13:28 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/18 09:42:42 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/07/18 10:48:13 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,6 @@ static char	**allocate(char *str, char **table, char c)
 		{
 			if (str[i] != c)
 			{
-
 				table[w] = ft_substr(str, start, i + 1 - start);
 				if (!table[w++])
 					return (NULL);

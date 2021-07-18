@@ -6,20 +6,19 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 12:31:26 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/18 08:12:41 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/07/18 09:57:29 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/** PURPOSE : Skips spaces, then signs, then 0.
+/** PURPOSE : Skips spaces and signs, then 0.
  *  Intentionally works only on that order. */
 static char	*advance_str(char *str, int *sign)
 {
 	while (*str == ' ' || *str == '\t' || *str == '\n' || \
-	*str == '\r' || *str == '\f' || *str == '\v')
-		str++;
-	while (*str == '+' || *str == '-')
+	*str == '\r' || *str == '\f' || *str == '\v' || \
+	*str == '+' || *str == '-')
 	{
 		if (*str == '-')
 			*sign *= -1;
