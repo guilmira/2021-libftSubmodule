@@ -6,7 +6,7 @@
 #    By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/17 12:59:05 by guilmira          #+#    #+#              #
-#    Updated: 2021/07/20 12:48:14 by guilmira         ###   ########.fr        #
+#    Updated: 2021/07/21 10:19:51 by guilmira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,7 @@ SRCS	=		$(1BOOLEANS) $(2STRINGS) $(3STRINGS_MID) $(4STRINGS_ADV) $(5NUMBERS) \
 
 7TOOLS =		./7tools/ft_count_digits.c ./7tools/ft_tolower.c ./7tools/ft_toupper.c
 
-8LINKED_LISTS = ./8linked_lists/ft_lstadd_back.c ./8linked_lists/ft_lstadd_front.c ./8linked_lists/ft_lstclear.c \
+8LINKED_LISTS = ./8linked_lists/ft_fullclear.c ./8linked_lists/ft_lstadd_back.c ./8linked_lists/ft_lstadd_front.c ./8linked_lists/ft_lstclear.c \
 				./8linked_lists/ft_lstdelone.c ./8linked_lists/ft_lstiter.c ./8linked_lists/ft_lstlast.c \
 				./8linked_lists/ft_lstmap.c ./8linked_lists/ft_lstnew.c ./8linked_lists/ft_lstsize.c
 
