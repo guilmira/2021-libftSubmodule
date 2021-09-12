@@ -6,12 +6,13 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 09:29:13 by guilmira          #+#    #+#             */
-/*   Updated: 2021/05/27 17:09:49 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/09/12 16:01:08 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/** PURPOSE : Prints nbr to file/ std output(fd = 1). */
 void	ft_putnbr_fd(int n, int fd)
 {
 	unsigned int	x;
