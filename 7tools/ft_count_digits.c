@@ -6,9 +6,11 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 10:55:46 by guilmira          #+#    #+#             */
-/*   Updated: 2021/06/30 11:29:11 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/09/13 15:00:16 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /** PURPOSE : counts digits of an int (iterative) */
 int	ft_count_digits(int n)
