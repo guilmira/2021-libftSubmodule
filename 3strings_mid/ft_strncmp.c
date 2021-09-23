@@ -6,12 +6,14 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 13:55:44 by guilmira          #+#    #+#             */
-/*   Updated: 2021/05/26 10:14:48 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/09/23 07:47:42 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/** PURPOSE : compares strings up to n char.
+ * Returns character difference. */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;

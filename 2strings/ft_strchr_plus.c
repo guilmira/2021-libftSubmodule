@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/04 13:24:28 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/06 08:26:31 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/09/23 07:44:09 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 /** PURPOSE : find any of the letters if located in origin string.
  * 1. Searchs str character by character.
- * 2. If letter is located, returns address to the letter (included).
- * */
+ * 2. If letter is located, returns address to the letter (included). */
 char	*ft_strchr_plus(char *str, char *letters)
 {
 	int	i;

@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 17:19:26 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/14 17:32:14 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/09/23 08:34:04 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,7 @@
  * 3. It will eventually reach the first digit. (from 643, it will get to '6')
  * 4. Converts the first digit to a string in position i = 0;
  * 5. Converts the rest of the digits in position i = 1, i = 2...
- * 6. Always closes the string by adding a 0 at the last position of the string.
- * */
+ * 6. Always closes the string by adding a 0 at the last position. */
 static void	itoa_writer(int n, char *ptr)
 {
 	static int	i;

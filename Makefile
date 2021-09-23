@@ -6,7 +6,7 @@
 #    By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/17 12:59:05 by guilmira          #+#    #+#              #
-#    Updated: 2021/07/21 10:19:51 by guilmira         ###   ########.fr        #
+#    Updated: 2021/09/23 08:02:59 by guilmira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,9 +62,6 @@ all: ${NAME}
 
 ${NAME}: ${OBJS}
 	ar rcs ${NAME} ${OBJS}
-
-m:
-	gcc main.c $(OBJS) $(INCLUDES) && ./a.out
 
 clean:
 	rm -rf ${OBJS}
