@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 14:43:09 by guilmira          #+#    #+#             */
-/*   Updated: 2021/08/17 11:57:18 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/09/23 11:34:40 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,9 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 /*TOOLS*/
+int		ft_count_digits_base(int n, int base);
 int		ft_count_digits(int n);
+char	*ft_tobinary(int n);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 /*LINKED LISTS*/

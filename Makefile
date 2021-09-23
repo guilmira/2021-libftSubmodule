@@ -6,7 +6,7 @@
 #    By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/17 12:59:05 by guilmira          #+#    #+#              #
-#    Updated: 2021/09/23 08:02:59 by guilmira         ###   ########.fr        #
+#    Updated: 2021/09/23 11:35:51 by guilmira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ INCLUDES = -I ./0includes
 
 #--------------------------------------------------------------------------------------------------------------SOURCES
 SRCS	=		$(1BOOLEANS) $(2STRINGS) $(3STRINGS_MID) $(4STRINGS_ADV) $(5NUMBERS) \
-				 $(6FDS) $(7TOOLS) $(8LINKED_LISTS) $(9MEMORY) $(10ARRAYS)
+				$(6FDS) $(7TOOLS) $(8LINKED_LISTS) $(9MEMORY) $(10ARRAYS)
 
 1BOOLEANS =		./1booleans/ft_isalnum.c ./1booleans/ft_isalpha.c ./1booleans/ft_isascii.c \
 				./1booleans/ft_isdigit.c ./1booleans/ft_isprint.c ./1booleans/ft_isspaces.c
@@ -41,7 +41,8 @@ SRCS	=		$(1BOOLEANS) $(2STRINGS) $(3STRINGS_MID) $(4STRINGS_ADV) $(5NUMBERS) \
 6FDS =			./6fds/ft_pointer_fd.c ./6fds/ft_putchar_fd.c ./6fds/ft_putendl_fd.c \
 				./6fds/ft_putnbr_fd.c ./6fds/ft_putstr_fd.c
 
-7TOOLS =		./7tools/ft_count_digits.c ./7tools/ft_tolower.c ./7tools/ft_toupper.c
+7TOOLS =		./7tools/ft_count_digits_base.c ./7tools/ft_count_digits.c ./7tools/ft_tobinary.c \
+				./7tools/ft_tolower.c ./7tools/ft_toupper.c
 
 8LINKED_LISTS = ./8linked_lists/ft_fullclear.c ./8linked_lists/ft_lstadd_back.c ./8linked_lists/ft_lstadd_front.c ./8linked_lists/ft_lstclear.c \
 				./8linked_lists/ft_lstdelone.c ./8linked_lists/ft_lstiter.c ./8linked_lists/ft_lstlast.c \
@@ -64,10 +65,10 @@ ${NAME}: ${OBJS}
 	ar rcs ${NAME} ${OBJS}
 
 clean:
-	rm -rf ${OBJS}
+	@rm -rf ${OBJS}
 
 fclean: clean
-	rm -rf $(NAME)
+	@rm -rf $(NAME)
 
 re: fclean all bonus
 
