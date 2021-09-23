@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 11:17:35 by guilmira          #+#    #+#             */
-/*   Updated: 2021/09/23 11:37:55 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/09/23 12:56:37 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ static void	binary_writer(int n, char *ptr)
 }
 
 /** PURPOSE : converts integer into its binary string equivalent.
+ * 						--ALLOCATES MEMORY--
  * 1. Allocate enough memory to contain enough digits. Note how it allocates
  * extra space in order to be able to finish the string with the '\0'
  * and also in case the number is negative and needs a '-' char.
