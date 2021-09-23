@@ -6,14 +6,14 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/17 18:39:27 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/18 08:16:24 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/09/23 11:47:35 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /** PURPOSE : returns 1 if space of variation. */
-int	ft_isspaces(int c)
+t_bool	ft_isspaces(int c)
 {
 	return (c == ' ' || c == '\t' || c == '\n' || \
 	c == '\r' || c == '\f' || c == '\v');

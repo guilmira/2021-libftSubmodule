@@ -6,14 +6,14 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 12:15:46 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/18 08:15:57 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/09/23 11:46:32 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /** PURPOSE : returns 1 if ASCII. */
-int	ft_isascii(int c)
+t_bool	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }
