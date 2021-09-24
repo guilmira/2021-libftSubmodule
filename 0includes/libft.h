@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 14:43:09 by guilmira          #+#    #+#             */
-/*   Updated: 2021/09/23 11:46:21 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/09/24 11:32:34 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@ typedef struct s_list
 typedef int	t_bool;
 
 /*BOOLEANS*/
-t_bool		ft_isalnum(int c);
-t_bool		ft_isalpha(int c);
-t_bool		ft_isascii(int c);
-t_bool		ft_isdigit(int c);
-t_bool		ft_isprint(int c);
-t_bool		ft_isspaces(int c);
+t_bool	ft_isalnum(int c);
+t_bool	ft_isalpha(int c);
+t_bool	ft_isascii(int c);
+t_bool	ft_isdigit(int c);
+t_bool	ft_isprint(int c);
+t_bool	ft_isspaces(int c);
 /*STRINGS*/
 char	*ft_strchr_plus(char *str, char *letters);
 char	*ft_strchr(const char *s, int c);
@@ -90,5 +90,8 @@ void	ft_array_print(int *array, int size);
 int		*ft_bubble_sort(int *array, int size);
 int		*ft_lstto_array(t_list *list, int *array_size);
 void	ft_swap(int *a, int *b);
+/*ERROR_MGMT*/
+void	ft_shutdown(void);
+void	ft_checkmalloc(void *ptr);
 
 #endif
