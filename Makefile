@@ -6,22 +6,20 @@
 #    By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/17 12:59:05 by guilmira          #+#    #+#              #
-#    Updated: 2021/09/26 14:09:36 by guilmira         ###   ########.fr        #
+#    Updated: 2021/09/28 12:16:28 by guilmira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+#--------------------------------------------------------------------------------------------------------------COMPILER
 NAME	= libft.a
-
-OBJS	= ${SRCS:.c=.o}
-
 CC		= gcc
 CFLAGS	= -Wall -Werror -Wextra #-g3 -fsanitize=address
-
+#--------------------------------------------------------------------------------------------------------------LIBS
 INCLUDES = -I ./0includes
-
 #--------------------------------------------------------------------------------------------------------------SOURCES
 SRCS	=		$(1BOOLEANS) $(2STRINGS) $(3STRINGS_MID) $(4STRINGS_ADV) $(5NUMBERS) \
 				$(6FDS) $(7TOOLS) $(8LINKED_LISTS) $(9MEMORY) $(10ARRAYS) $(11ERROR_MGMT)
+OBJS	=		${SRCS:.c=.o}
 
 1BOOLEANS =		./1booleans/ft_isalnum.c ./1booleans/ft_isalpha.c ./1booleans/ft_isascii.c \
 				./1booleans/ft_isdigit.c ./1booleans/ft_isprint.c ./1booleans/ft_isspaces.c
@@ -74,4 +72,4 @@ fclean: clean
 
 re: fclean all bonus
 
-.PHONY: all bonus clean fclean re
+.PHONY: all clean fclean re
