@@ -6,7 +6,7 @@
 #    By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/17 12:59:05 by guilmira          #+#    #+#              #
-#    Updated: 2021/09/28 12:16:28 by guilmira         ###   ########.fr        #
+#    Updated: 2021/09/29 11:13:17 by guilmira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,15 +54,15 @@ OBJS	=		${SRCS:.c=.o}
 				./10arrays/ft_swap.c
 
 11ERROR_MGMT =	./11error_mgmt/ft_checkmalloc.c ./11error_mgmt/ft_shutdown.c
-
 #--------------------------------------------------------------------------------------------------------------RULES
 all: ${NAME}
 
 %.o: %.c
 	-@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
-${NAME}: ${OBJS}
-	ar rcs ${NAME} ${OBJS}
+$(NAME): $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
+	@echo $(GREEN) "Libft compiled" $(NONE)
 
 clean:
 	@rm -rf ${OBJS}
@@ -73,3 +73,8 @@ fclean: clean
 re: fclean all bonus
 
 .PHONY: all clean fclean re
+#--------------------------------------------------------------------------------------------------------------COLOURS
+NONE='\033[0m'
+GREEN='\033[32m'
+
+
