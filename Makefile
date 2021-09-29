@@ -6,7 +6,7 @@
 #    By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/17 12:59:05 by guilmira          #+#    #+#              #
-#    Updated: 2021/09/29 11:13:17 by guilmira         ###   ########.fr        #
+#    Updated: 2021/09/29 11:21:14 by guilmira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,7 +62,7 @@ all: ${NAME}
 
 $(NAME): $(OBJS)
 	@ar rcs $(NAME) $(OBJS)
-	@echo $(GREEN) "Libft compiled" $(NONE)
+	@echo $(BLUE) "Libft compiled" $(NONE)
 
 clean:
 	@rm -rf ${OBJS}
@@ -75,6 +75,6 @@ re: fclean all bonus
 .PHONY: all clean fclean re
 #--------------------------------------------------------------------------------------------------------------COLOURS
 NONE='\033[0m'
-GREEN='\033[32m'
+BLUE='\033[1;34m'
 
 
