@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 14:43:09 by guilmira          #+#    #+#             */
-/*   Updated: 2021/09/24 11:32:34 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/10/02 09:37:59 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,17 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+/** Buffer_size for get_next_line function. */
+# define BUFFER_SIZE 100
+
+/** Struct that stores single direction linked list. */
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
 
+/** t_bool will only be given values of either 0 or 1 */
 typedef int	t_bool;
 
 /*BOOLEANS*/
@@ -90,8 +95,10 @@ void	ft_array_print(int *array, int size);
 int		*ft_bubble_sort(int *array, int size);
 int		*ft_lstto_array(t_list *list, int *array_size);
 void	ft_swap(int *a, int *b);
-/*ERROR_MGMT*/
+/*ERROR MANAGEMENT*/
 void	ft_shutdown(void);
 void	ft_checkmalloc(void *ptr);
+/*GET NEXT LINE*/
+int	get_next_line(int fd, char **line);
 
 #endif
