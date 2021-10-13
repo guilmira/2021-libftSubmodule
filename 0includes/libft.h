@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 14:43:09 by guilmira          #+#    #+#             */
-/*   Updated: 2021/10/02 09:37:59 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/10/13 19:56:10 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,6 @@ void	ft_swap(int *a, int *b);
 void	ft_shutdown(void);
 void	ft_checkmalloc(void *ptr);
 /*GET NEXT LINE*/
-int	get_next_line(int fd, char **line);
+int		get_next_line(int fd, char **line);
 
 #endif
