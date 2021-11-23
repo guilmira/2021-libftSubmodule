@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/18 07:44:40 by guilmira          #+#    #+#             */
-/*   Updated: 2021/07/18 10:48:24 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/11/23 15:13:55 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void	ft_free_split(char **table)
 
 	w = -1;
 	while (table[++w])
-	{
 		free(table[w]);
-	}
 	free(table);
 }

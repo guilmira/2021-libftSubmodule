@@ -6,12 +6,14 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 17:10:34 by guilmira          #+#    #+#             */
-/*   Updated: 2021/05/30 12:41:40 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/11/23 14:57:55 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/** PURPOSE : Checks string for desired character. If
+ * found a, for example an space, it will return 1. */
 static int	check_set(char const c, char const *set)
 {
 	int	i;
@@ -23,6 +25,13 @@ static int	check_set(char const c, char const *set)
 	return (0);
 }
 
+/** PURPOSE : Takes a string and start and end number. Copies it in mem.
+  * 			--ALWAYS ALLOCATES MEMORY (if strings exist)--
+ * 1. Fixes counters. this is: 
+ * i = first non 'space' found. 
+ * j = first non 'space' found, counting from the back.
+ * 2. Uses substr(here memory allocation occurs) to create a string
+ * that will contain only the desired characters. */
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		i;

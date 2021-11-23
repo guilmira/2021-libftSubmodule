@@ -6,12 +6,17 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 17:09:17 by guilmira          #+#    #+#             */
-/*   Updated: 2021/06/04 11:56:49 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/11/23 15:16:20 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/** PURPOSE : Joins two strings into a new allocated string.
+  * 					--ALLOCATES MEMORY--
+ * 1. Allocates enough memory by adding the two lenghts (+ 1 to account for \\0).
+ * 2. Copies both strings adjacent, then adds 0. Returns pointer. 
+ * 3. Does not free original strings. */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*ptr;
