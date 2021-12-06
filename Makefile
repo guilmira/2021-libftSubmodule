@@ -6,7 +6,7 @@
 #    By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/17 12:59:05 by guilmira          #+#    #+#              #
-#    Updated: 2021/10/07 14:11:59 by guilmira         ###   ########.fr        #
+#    Updated: 2021/12/06 11:07:30 by guilmira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,7 +54,7 @@ OBJS	=		${SRCS:.c=.o}
 10ARRAYS =		./10arrays/ft_array_print.c ./10arrays/ft_bubble_sort.c ./10arrays/ft_lstto_array.c \
 				./10arrays/ft_swap.c
 
-11ERROR_MGMT =	./11error_mgmt/ft_checkmalloc.c ./11error_mgmt/ft_shutdown.c
+11ERROR_MGMT =	./11error_mgmt/ft_checkmalloc.c ./11error_mgmt/ft_ex.c
 
 12GNL =			./12gnl/get_next_line.c
 #--------------------------------------------------------------------------------------------------------------RULES
