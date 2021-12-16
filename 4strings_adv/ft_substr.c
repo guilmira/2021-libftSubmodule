@@ -6,19 +6,19 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 17:08:32 by guilmira          #+#    #+#             */
-/*   Updated: 2021/11/23 15:10:22 by guilmira         ###   ########.fr       */
+/*   Updated: 2021/12/16 09:04:23 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /** PURPOSE : Allocates space and copies 's' form 'start' to 'len'.
-  * 						--ALLOCATES MEMORY--
+ * 						--ALLOCATES MEMORY--
  * 1. Mem allocation. If string is smaller than len, then allocate for strlen.
- * Otherwise, only size of len is needed in hep, + 1 to add the /0 and terminate str. 
+ * Otherwise, only size of len is needed in heap, + 1 to add the /0.
  * 2. Copies content of string and returns it. 
- * Note: if start is bigger than strlen, it still allocates memory for astring
- * even if it will contain no caracter.*/
+ * Note: if start is bigger than strlen, it still allocates memory for 
+ * a string even if it will contain no caracter. */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	unsigned int	i;
