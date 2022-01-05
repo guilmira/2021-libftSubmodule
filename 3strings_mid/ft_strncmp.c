@@ -6,14 +6,17 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 13:55:44 by guilmira          #+#    #+#             */
-/*   Updated: 2021/09/23 07:47:42 by guilmira         ###   ########.fr       */
+/*   Updated: 2022/01/05 17:34:20 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/** PURPOSE : compares strings up to n char.
- * Returns character difference. */
+/** PURPOSE : compares string difference up to n char.
+ * EXAMPLE1 --  ft_strncmp("lex_PIPE", "lex_", 4)) 
+ * -> Return 0, as it evaluates 4 characters
+ * EXAMPLE2 -- ft_strncmp("lex1PIPE", "lex0", 4)
+ * -> Return 1, the diff on the fourth char */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
