@@ -6,12 +6,13 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 13:55:44 by guilmira          #+#    #+#             */
-/*   Updated: 2022/01/05 17:34:20 by guilmira         ###   ########.fr       */
+/*   Updated: 2022/01/06 15:19:09 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+#include <stdio.h>
 /** PURPOSE : compares string difference up to n char.
  * EXAMPLE1 --  ft_strncmp("lex_PIPE", "lex_", 4)) 
  * -> Return 0, as it evaluates 4 characters
