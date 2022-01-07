@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 17:10:34 by guilmira          #+#    #+#             */
-/*   Updated: 2021/12/16 08:59:07 by guilmira         ###   ########.fr       */
+/*   Updated: 2022/01/07 11:01:38 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static int	check_set(char const c, char const *set)
 	return (0);
 }
 
-/** PURPOSE : Takes a string and start and end number. Copies it in mem.
+/** PURPOSE : Takes a string and trims string set at the beginning and end.
   * 			--ALWAYS ALLOCATES MEMORY (if strings exist)--
  * 1. Fixes counters. this is: 
  * i = first non 'space' found. 
