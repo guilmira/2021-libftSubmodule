@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/19 13:31:46 by guilmira          #+#    #+#             */
-/*   Updated: 2021/12/16 09:01:49 by guilmira         ###   ########.fr       */
+/*   Updated: 2022/02/12 11:37:34 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 /** PURPOSE : compares character by character until string end.
  * 1. Returns 0 in case of matching strings.
- * 2. Returns diff of characters if strings do not match. */
+ * 2. Returns diff of characters if strings do not match. 
+ * IMPORTANT - The order of the strings matters. */
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
