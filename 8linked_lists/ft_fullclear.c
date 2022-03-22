@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/20 13:54:13 by guilmira          #+#    #+#             */
-/*   Updated: 2021/10/04 10:18:21 by guilmira         ###   ########.fr       */
+/*   Updated: 2022/03/22 09:24:57 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ void	ft_fullclear(t_list *lst)
 	while (lst)
 	{
 		tmp = lst->next;
-		free(lst->content);
+		if (lst->content)
+			free(lst->content);
 		free(lst);
 		lst = tmp;
 	}
