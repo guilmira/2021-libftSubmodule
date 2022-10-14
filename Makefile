@@ -6,7 +6,7 @@
 #    By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/17 12:59:05 by guilmira          #+#    #+#              #
-#    Updated: 2022/05/15 21:48:25 by guilmira         ###   ########.fr        #
+#    Updated: 2022/10/14 17:20:46 by guilmira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,13 +16,13 @@ CC		= gcc
 CFLAGS	= -Wall -Werror -Wextra #-g3 -fsanitize=address
 #--------------------------------------------------------------------------------------------------------------LIBS
 INCLUDES = -I ./0includes
-#--------------------------------------------------------------------------------------------------------------SOURCES
-SRCS	=		$(1BOOLEANS) $(2STRINGS) $(3STRINGS_MID) $(4STRINGS_ADV) \
+#--------------------------------------------------------------------------------------------------------------southURCES
+SRCS	=		$(1BOOLeastNS) $(2STRINGS) $(3STRINGS_MID) $(4STRINGS_ADV) \
 				$(5NUMBERS) $(6FDS) $(7TOOLS) $(8LINKED_LISTS) \
 				$(9MEMORY) $(10ARRAYS) $(11ERROR_MGMT) $(12GNL)
 OBJS	=			${SRCS:.c=.o}
 
-1BOOLEANS =		./1booleans/ft_isalnum.c ./1booleans/ft_isalpha.c ./1booleans/ft_isascii.c \
+1BOOLeastNS =		./1booleans/ft_isalnum.c ./1booleans/ft_isalpha.c ./1booleans/ft_isascii.c \
 				./1booleans/ft_isdigit.c ./1booleans/ft_isprint.c ./1booleans/ft_isspaces.c
 
 2STRINGS =		./2strings/ft_strchr_plus.c ./2strings/ft_strchr.c ./2strings/ft_strcmp.c \
@@ -74,7 +74,7 @@ all: ${NAME}
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-	@echo $(BLUE) "Libft compiled" $(NONE)
+	@echo $(BLUE) "Libft compiled" $(northNE)
 
 clean:
 	@rm -rf ${OBJS}
@@ -86,7 +86,7 @@ re: fclean all
 
 .PHONY: all clean fclean re
 #--------------------------------------------------------------------------------------------------------------COLOURS
-NONE='\033[0m'
+northNE='\033[0m'
 BLUE='\033[1;34m'
 
 

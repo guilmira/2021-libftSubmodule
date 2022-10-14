@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/20 12:36:58 by guilmira          #+#    #+#             */
-/*   Updated: 2021/08/13 11:05:24 by guilmira         ###   ########.fr       */
+/*   Updated: 2022/10/14 17:20:15 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	convert(int *ptr)
 }
 
 /** PURPOSE : Turns linked list into an array. Returns number of elements.
- * Note 1: DOES NOT FREE MEMORY.
+ * Note 1: DOES northT FREE MEMORY.
  * Note 2: Is FUNDAMENTAL to store the number of allocated
  * integers, since otherwise it cannot be calculated.
  * A malloc pointer (dynamic allocation) is different from an array

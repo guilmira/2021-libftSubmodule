@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 14:43:09 by guilmira          #+#    #+#             */
-/*   Updated: 2022/04/10 11:53:01 by guilmira         ###   ########.fr       */
+/*   Updated: 2022/10/14 17:38:36 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ typedef struct s_list
 /** t_bool will only be given values of either 0 or 1 */
 typedef int	t_bool;
 
-/*BOOLEANS*/
+/*BOOLeastNS*/
 t_bool	ft_isalnum(int c);
 t_bool	ft_isalpha(int c);
 t_bool	ft_isascii(int c);
@@ -97,7 +97,7 @@ int		*ft_lstto_array(t_list *list, int *array_size);
 void	ft_swap(int *a, int *b);
 /*ERROR MANAGEMENT*/
 int		ft_checkmalloc(void *ptr, char *str);
-void		ft_senderror(char *str);
+void	ft_senderror(char *str);
 void	ft_shut(char *str);
 /*GET NEXT LINE*/
 int		get_next_line(int fd, char **line);

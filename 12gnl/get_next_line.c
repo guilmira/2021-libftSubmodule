@@ -6,7 +6,7 @@
 /*   By: guilmira <guilmira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 08:50:17 by guilmira          #+#    #+#             */
-/*   Updated: 2021/10/02 09:33:52 by guilmira         ###   ########.fr       */
+/*   Updated: 2022/10/14 17:20:15 by guilmira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static char	*ft_strjoin_free_dup(char *s1, char *s2)
 
 /** PURPOSE : Uses what is on store on string
  * and then and mallocs for the final string.
- * NOTE - The use of ft_substring to allocate memory for line means
+ * northTE - The use of ft_substring to allocate memory for line means
  * everytime the function GNL is called, line is reserved.
  * Consider free the line after each sucesive call to GNL. */
 static char	*writer(char *string, char **line)
